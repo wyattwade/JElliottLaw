@@ -1,41 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-
-.title-container{
-    height: 58vh;
-    min-height: 200px;
-    width: 100%;
-    /* background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("los-angeles.jpg") no-repeat center center fixed; */
-    background:    url("los-angeles.jpg") no-repeat top center fixed;
-
-    object-fit: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
+body{
+  max-width: 100%;
+}
 
+.title-container {
+  height: 58vh;
+  min-height: 200px;
+  width: 100%;
+  /* background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("los-angeles.jpg") no-repeat center center fixed; */
+  background: url("los-angeles.jpg") no-repeat top center fixed;
 
-.about-container-left{
+  object-fit: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-container-left {
   text-align: center;
   width: 72%;
   margin-left: 14%;
-  float: left;
 }
 
-
-.about-title{
+.about-title {
   font-family: palatino;
   margin-top: 8vh;
   font-size: 22px;
 }
 
-.googleMap{
-  margin-top: 20vh;
-  height: 40vh;
-  width: 100vw;
-  border:0;
+.share-container {
+  display: flex;
+  width: 240px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+i {
+  font-size: 26px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 1px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+.fa-twitter-square {
+  color: #38a1f3;
+}
+
+
+
+.googleMap {
+  margin-left: 16%;
+  width: 68vw;
+  height: 25vw;
+  border: 0;
+  margin-top: 32px;
+}
+
+
+.located-container{
+  background-color: rgb(230, 230, 230);
+  margin-top: 50px;
+  height: 120px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+
+.located-text{
+  margin-left: 10%;
+  width: 44vw;
+  margin-top: 34px;
+}
+
+.logo-image-2{
+  margin-left: 7vw;
+  height: 40px;
+  margin-top: 40px;
 }
