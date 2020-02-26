@@ -11,6 +11,10 @@ body{
   border: none;
 }
 
+.nav-link-phone{
+  padding-right: 38px !important;
+}
+
 .title-container {
   height: 58vh;
   min-height: 200px;
