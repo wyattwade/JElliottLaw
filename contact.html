@@ -25,7 +25,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="main.png" width="280" height=68" class="d-inline-block
+        <img src="Images/main.png" width="280" height=68" class="d-inline-block
         align-top" alt="">
       </a>
       <button
@@ -53,7 +53,7 @@
     <div class="main-container">
     <div class="left-container">
       <div>
-        <img src="headshot.png" class="profile-image"></img>
+        <img src="Images/headshot.png" class="profile-image"></img>
       </div>
       <div class="left-menu">
           <div class="left-menu-title"><br>Practice Areas</div>
@@ -79,14 +79,48 @@
 
         <br><br>
         <b>Elliott & Associates</b><br>
-        12121 Wilshire Blvd., Suite 800<br>
+        12121 Wilshire Blvd., Suite 810<br>
         Los Angeles, CA 90025<br>
         <b>Phone:</b> 310.394.6455<br>
         <b>Fax:</b> 310.394.6685<br>
         <br>
         To contact us by email, please fill out the contact form below.
 
-        <button class="email-test">email test</button>
+        <!-- <button class="email-test">email test</button> -->
+
+        <!-- <iframe src="http://www.123formbuilder.com/form-5310074/contact-form" style="width: 80%; height: 800px;"></iframe> -->
+
+
+        <!-- https://formspree.io/ -->
+        <form
+          action="https://formspree.io/f/xoqrlwly"
+          method="POST"
+        >
+          <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+
+
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xoqrlwly" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
       
     </div>
   </div>
