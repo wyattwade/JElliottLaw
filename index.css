@@ -15,6 +15,14 @@ body{
   padding-right: 38px !important;
 }
 
+.nav-item {
+  color: black !important;
+}
+
+.nav-item:hover{
+  color:rgba(0, 0, 0, 0.75) !important;
+}
+
 .title-container {
   height: 58vh;
   min-height: 200px;
@@ -136,7 +144,7 @@ hr{
 
 .testimonial{
   margin-top: 28px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(240, 240, 240);
   border-radius: 8px;
   padding: 15px;
   font-size: 16px;
