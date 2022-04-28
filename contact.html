@@ -90,22 +90,17 @@
           To contact us by email, please fill out the contact form below:
         </div>
         
-        <form id="fs-frm" name="simple-contact-form" action="https://formspree.io/f/xoqrlwly" method="POST"></form>
-        <!-- <form id="fs-frm" name="simple-contact-form" action="https://formspree.io/f/xoqrlwly" method="post"> -->
+        <!-- This form is the one that redirects to another 'form submitted' page -->
+        <!-- <form id="fs-frm" name="simple-contact-form" action="https://formspree.io/f/xoqrlwly" method="POST"></form>
           <fieldset id="fs-frm-inputs">
-            <!-- <label for="full-name">Full Name</label> -->
             <div>
               <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
-              <!-- <br><label for="email-address">Email Address</label> -->
               <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
             </div>
             <div>
               <input type="location" name="location" id="location" placeholder="Location" required="">
               <input type="phone" name="phone" id="phone" placeholder="Phone" required="">
-            </div>
-
-            <!-- <br><label id="message-label" for="message">Message</label> -->
-            
+            </div>            
             <textarea rows="5" name="message" id="message" placeholder="Details" required=""></textarea>
             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           </fieldset>
@@ -115,30 +110,30 @@
             <button id="fs-form-button">Submit</button>
             <p id="fs-form-status"></p>
           </div>
-        </form>
+        </form> -->
         
-
-
-
-
-
-        <!-- modify this form HTML and place wherever you want your form -->
         <form id="my-form" action="https://formspree.io/f/xoqrlwly" method="POST">
-          <label>Email:</label>
-          <input type="email" name="email" />
-          <label>Message:</label>
-          <input type="text" name="message" />
-          <button id="my-form-button">Submit</button>
+          <fieldset id="my-form-inputs">
+            <div>
+              <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
+              <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+            </div>
+            <div>
+              <input type="location" name="location" id="location" placeholder="Location" required="">
+              <input type="phone" name="phone" id="phone" placeholder="Phone" required="">
+            </div>            
+            <textarea rows="5" name="message" id="message" placeholder="Details" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <div id="contact-submit">
+            <button id="my-form-button">Send</button>
+          </div>
           <p id="my-form-status"></p>
         </form>
-
-
-
-
-
-
-
-
+        
+        
+        
+        
 
 
       </div>
@@ -197,13 +192,13 @@
 
 
 </body>
-<!-- Place this script at the end of the body tag -->
+
 <script>
-    var form = document.getElementById("fs-form");
+    var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("fs-form-status");
+      var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
@@ -213,7 +208,7 @@
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Thank you for contacting JElliottLaw. Your message has been sent.";
           form.reset()
         } else {
           response.json().then(data => {
