@@ -7,6 +7,12 @@ body{
   max-width: 100%;
 }
 
+.navbar-brand{
+  font-family: 'Copperplate', 'Times New Roman', serif;
+  /* font-weight: bold; */
+  font-size: 24px;
+}
+
 .navbar-toggler{
   border: none;
 }
