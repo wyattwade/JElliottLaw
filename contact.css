@@ -135,15 +135,14 @@ form {
   font-size: 18px;
 }
 
-#my-form-button{
-
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+#my-form-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 
   margin-top: 10px;
   padding: 8px 24px;
@@ -151,10 +150,26 @@ form {
   background: rgb(19, 13, 124);
   border-radius: 5px;
 
-  transition: background-color .4s;
+  transition: background-color 0.4s;
 }
 
-
-#my-form-button:hover{
+#my-form-button:hover {
   background: rgb(44, 56, 184);
+}
+
+@media only screen and (max-width: 1000px) {
+  .left-container {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .contact input {
+    width: calc(100% - 4px);
+    margin: 4px 0 0 0 !important;
+  }
+
+  #message {
+    margin-top: 4px;
+  }
 }
