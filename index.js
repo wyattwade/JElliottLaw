@@ -1,5 +1,3 @@
-console.log('hey');
-
 window.onscroll = () => {
     let scrollPosition = $(document).scrollTop();
 
