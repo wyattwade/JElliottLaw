@@ -4,13 +4,39 @@
 }
 
 body{
+  
   max-width: 100%;
+}
+
+.navbar{
+  background: #d0d0d0;
+  color: white !important;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.nav-transparent{
+  background: transparent;
+  color: white !important;
+}
+
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0); /* NON-IE */
 }
 
 .navbar-brand{
   font-family: 'Copperplate', 'Times New Roman', serif;
   /* font-weight: bold; */
   font-size: 24px;
+  color: black;
 }
 
 .navbar-toggler{
@@ -22,11 +48,58 @@ body{
 }
 
 .nav-item {
-  color: black !important;
+  color: black;
 }
 
 .nav-item:hover{
   color:rgba(0, 0, 0, 0.75) !important;
+}
+
+
+
+
+
+
+/* here */
+
+.center-title{
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.616); */
+  padding: 10px 40px 25px 40px;
+  color: white;
+  width: 68%;
+  left: 16%;
+  top: 25vh;
+  z-index: 10000;
+  text-align: center;
+  font-size: 32px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.attorney-title{
+
+}
+
+.center-quote{
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+#my-video{
+  right: 0;
+  bottom: 0;
+  filter: brightness(40%);
+
+  min-width: 100%; 
+  min-height: 100%;
+  
+    width: auto;
+    height: auto;
+
+
 }
 
 .title-container {
