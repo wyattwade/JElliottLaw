@@ -23,7 +23,7 @@ body{
 }
 
 .nav-transparent{
-  background: white;
+  background: transparent;
   color: white !important;
 }
 
@@ -48,11 +48,12 @@ body{
 }
 
 .nav-item {
-  color: black;
+  color: black !important;
+  font-size: 18px !important;
 }
 
 .nav-item:hover{
-  color:rgba(0, 0, 0, 0.75) !important;
+  color:rgb(63, 63, 63) !important;
 }
 
 
@@ -96,6 +97,15 @@ body{
     width: auto;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
 
 .title-container {
   height: 58vh;

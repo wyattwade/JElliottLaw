@@ -2,7 +2,8 @@
     display: flex;
     width: 68%;
     margin-left: 12%;
-    margin-top: 40px;
+    position: relative;
+    top: 100px;
 }
 
 .profiles-title{

@@ -1,8 +1,9 @@
 .main-container {
+  position: relative;
+  top: 100px;
   display: flex;
   width: 68%;
   margin-left: 12%;
-  margin-top: 40px;
 }
 
 .profiles-title {
