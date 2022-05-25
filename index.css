@@ -4,6 +4,7 @@
 }
 
 body{
+  
   max-width: 100%;
 }
 
@@ -28,7 +29,6 @@ body{
 
 
 .navbar.scrolled {
-  background: rgb(0,0,0,0); /* IE */
   background: rgba(0, 0, 0, 0); /* NON-IE */
 }
 
@@ -55,11 +55,51 @@ body{
   color:rgba(0, 0, 0, 0.75) !important;
 }
 
+
+
+
+
+
+/* here */
+
+.center-title{
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.616); */
+  padding: 10px 40px 25px 40px;
+  color: white;
+  width: 68%;
+  left: 16%;
+  top: 25vh;
+  z-index: 10000;
+  text-align: center;
+  font-size: 32px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.attorney-title{
+
+}
+
+.center-quote{
+  margin-top: 20px;
+  font-size: 25px;
+}
+
 #my-video{
   right: 0;
   bottom: 0;
-  width: 100%;
-  filter: brightness(50%);
+  filter: brightness(40%);
+
+  min-width: 100%; 
+  min-height: 100%;
+  
+    width: auto;
+    height: auto;
+
+
 }
 
 .title-container {
