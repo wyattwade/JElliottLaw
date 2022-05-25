@@ -29,6 +29,10 @@ body{
   color:rgba(0, 0, 0, 0.75) !important;
 }
 
+.main-quote{
+  font-weight: bold;
+}
+
 .title-container {
   height: 58vh;
   min-height: 200px;
