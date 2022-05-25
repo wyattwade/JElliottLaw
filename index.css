@@ -55,11 +55,8 @@ body{
   color:rgba(0, 0, 0, 0.75) !important;
 }
 
-#my-video{
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  filter: brightness(50%);
+.main-quote{
+  font-weight: bold;
 }
 
 .title-container {
@@ -92,7 +89,7 @@ body{
   display: flex;
   width: 260px;
   margin: auto;
-  margin-top: 40px;
+  padding-top: 80px;
 }
 
 i {
