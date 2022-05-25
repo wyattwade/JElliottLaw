@@ -89,13 +89,13 @@ body{
 #my-video{
   right: 0;
   bottom: 0;
-  filter: brightness(40%);
+  filter: brightness(50%);
 
   min-width: 100%; 
   min-height: 100%;
   
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 
@@ -325,5 +325,29 @@ blockquote cite:before {
 
   .left-container{
     display: none;
+  }
+
+  video{
+    display: none;
+  }
+
+  .center-title{
+    color: black;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.616); */
+    padding: 80px 40px 25px 40px;
+    width: 76%;
+    left: 12%;
+    z-index: 1000;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4.2px;
+;
+  }
+  
+  .center-quote{
+    letter-spacing: 1px;
+    margin-top: 40px;
+    font-size: 20px;
   }
 }
