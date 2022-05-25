@@ -89,7 +89,7 @@ body{
   display: flex;
   width: 260px;
   margin: auto;
-  margin-top: 40px;
+  padding-top: 80px;
 }
 
 i {
