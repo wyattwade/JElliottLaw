@@ -17,51 +17,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
     <title>
-      Southern California Employment Discrimination Attorneys | Elliott & Associates
+      Santa Monica Employment Discrimination Attorneys | Elliott & Associates
     </title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#">
         <img src="Images/main.png" width="280" height=68" class="d-inline-block
         align-top" alt="">
-      </a> -->
-      <a class="navbar-brand" href="/.">
-        Elliott & Associates 
-        <!-- Employment Attourney -->
       </a>
       <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ml-auto">
-          
-          <a class="nav-item nav-link ml-4" href="./attorneyprofiles.html"
-            >Attorney Profiles</a
-          >
-          <a class="nav-item nav-link ml-4" href="./testimonials.html"
-            >Testimonials</a
-          >
-          <a class="nav-item nav-link ml-4" href="./contact.html">Contact Us</a>
-          <a class="nav-item nav-link ml-4 nav-link-phone" href="#"
-            >(310)394-6455</a
-          >
-        </ul>
-      </div>
-    </nav>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto">
+        <a class="nav-item nav-link ml-4" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link ml-4" href="./attorneyprofiles.html">Attorney Profiles</a>
+        <a class="nav-item nav-link ml-4" href="./testimonials.html">Testimonials</a>
+        <a class="nav-item nav-link ml-4" href="./contact.html">Contact Us</a>
+        <a class="nav-item nav-link ml-4 nav-link-phone" href="#">(310)394-6455</a>
+      </ul>
+    </div>
+  </nav>
   
   <div class="contact">
 
@@ -97,6 +84,7 @@
         12121 Wilshire Blvd., Suite 810<br>
         Los Angeles, CA 90025<br>
         <b>Phone:</b> 310.394.6455<br>
+        <b>Fax:</b> 310.394.6685<br>
         <br>
         <div>
           To contact us by email, please fill out the contact form below:
@@ -138,7 +126,7 @@
             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           </fieldset>
           <div id="contact-submit">
-            <button id="my-form-button" class="g-recaptcha" data-sitekey="6LcQrR8gAAAAAHUJf2miy3zofPVm7SN1EKoemzVm" data-callback='onSubmit'>Send</button>
+            <button id="my-form-button">Send</button>
           </div>
           <p id="my-form-status"></p>
         </form>
@@ -204,9 +192,7 @@
 
 
 </body>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer>
-</script>
+
 <script>
     var form = document.getElementById("my-form");
     
@@ -237,7 +223,8 @@
         status.innerHTML = "Oops! There was a problem submitting your form"
       });
     }
-    form.addEventListener("submit", handleSubmit)
+    // add back for no redirect
+    // form.addEventListener("submit", handleSubmit)
 </script>
 
 
