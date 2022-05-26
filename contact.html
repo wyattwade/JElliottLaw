@@ -125,6 +125,7 @@
         </form> -->
         
         <form id="my-form" action="https://formspree.io/f/xoqrlwly" method="POST">
+          <div id="html_element"></div>
           <fieldset id="my-form-inputs">
             <div>
               <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
@@ -204,8 +205,16 @@
 
 
 </body>
-
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
 <script>
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+    grecaptcha.render('html_element', {
+          'sitekey' : '6Lfwoh8gAAAAACguVeXL709y3Fq-0VBHoYKoBzN1'
+        });
+  };
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
