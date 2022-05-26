@@ -125,7 +125,6 @@
         </form> -->
         
         <form id="my-form" action="https://formspree.io/f/xoqrlwly" method="POST">
-          <div id="html_element"></div>
           <fieldset id="my-form-inputs">
             <div>
               <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
@@ -139,7 +138,7 @@
             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           </fieldset>
           <div id="contact-submit">
-            <button id="my-form-button">Send</button>
+            <button id="my-form-button" class="g-recaptcha" data-sitekey="6LcQrR8gAAAAAHUJf2miy3zofPVm7SN1EKoemzVm" data-callback='onSubmit'>Send</button>
           </div>
           <p id="my-form-status"></p>
         </form>
@@ -209,12 +208,6 @@
     async defer>
 </script>
 <script>
-  var onloadCallback = function() {
-    alert("grecaptcha is ready!");
-    grecaptcha.render('html_element', {
-          'sitekey' : '6Lfwoh8gAAAAACguVeXL709y3Fq-0VBHoYKoBzN1'
-        });
-  };
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
