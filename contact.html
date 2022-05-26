@@ -205,16 +205,7 @@
 
 
 </body>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer>
-</script>
 <script>
-  var onloadCallback = function() {
-    alert("grecaptcha is ready!");
-    grecaptcha.render('html_element', {
-          'sitekey' : '6Lfwoh8gAAAAACguVeXL709y3Fq-0VBHoYKoBzN1'
-        });
-  };
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
