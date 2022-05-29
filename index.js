@@ -1,5 +1,4 @@
-console.log('hey');
-
+// alert(window.innerWidth)
 window.onscroll = () => {
     let scrollPosition = $(document).scrollTop();
 
