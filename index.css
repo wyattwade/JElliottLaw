@@ -3,17 +3,17 @@
   padding: 0;
 }
 
-body{
+body {
   max-width: 100%;
 }
 
-.navbar{
+.navbar {
   background: #d0d0d0;
   color: white !important;
   position: fixed;
   z-index: 1000;
   width: 100%;
-  
+
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -21,29 +21,28 @@ body{
   transition: all 0.6s ease-out;
 }
 
-.nav-transparent{
+.nav-transparent {
   background: transparent;
   color: white !important;
 }
 
-
 .navbar.scrolled {
-  background: rgb(0,0,0,0); /* IE */
+  background: rgb(0, 0, 0, 0); /* IE */
   background: rgba(0, 0, 0, 0); /* NON-IE */
 }
 
-.navbar-brand{
-  font-family: 'Copperplate', 'Times New Roman', serif;
+.navbar-brand {
+  font-family: "Copperplate", "Times New Roman", serif;
   /* font-weight: bold; */
   font-size: 24px;
   color: black;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
-.nav-link-phone{
+.nav-link-phone {
   padding-right: 38px !important;
 }
 
@@ -51,29 +50,16 @@ body{
   color: black;
 }
 
-.nav-item:hover{
-  color:rgba(0, 0, 0, 0.75) !important;
+.nav-item:hover {
+  color: rgba(0, 0, 0, 0.75) !important;
 }
 
-.main-quote{
+.main-quote {
   font-weight: bold;
 }
 
-.title-container {
-  height: 58vh;
-  min-height: 200px;
-  width: 100%;
-  /* background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("los-angeles.jpg") no-repeat center center fixed; */
-  background: url("Images/los-angeles.jpg") no-repeat top center fixed;
-
-  object-fit: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.intro-section, .testimonials-section {
+.intro-section,
+.testimonials-section {
   text-align: center;
   width: 72%;
   margin-left: 14%;
@@ -112,8 +98,6 @@ i {
   color: #38a1f3;
 }
 
-
-
 .googleMap {
   /* margin-left: 28%;
   width: 40vw; */
@@ -123,8 +107,7 @@ i {
   margin-top: 32px;
 }
 
-
-.located-container{
+.located-container {
   background-color: rgb(230, 230, 230);
   margin-top: 50px;
   height: 120px;
@@ -133,20 +116,19 @@ i {
   display: flex;
 }
 
-
-.located-text{
+.located-text {
   margin-left: 10%;
   width: 44vw;
   margin-top: 34px;
 }
 
-.logo-image-2{
+.logo-image-2 {
   margin-left: 7vw;
   height: 40px;
   margin-top: 40px;
 }
 
-.footer{
+.footer {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -154,7 +136,7 @@ i {
   flex-wrap: wrap;
 }
 
-.footer-link{
+.footer-link {
   font-size: 12px;
   cursor: pointer;
   width: 140px;
@@ -163,22 +145,22 @@ i {
   padding-top: 10px;
 }
 
-.footer-link-phone{
+.footer-link-phone {
   cursor: auto;
 }
 
-.footer-2{
+.footer-2 {
   font-size: 10.5px;
   padding-top: 25px;
   height: 68px;
   text-align: center;
 }
 
-hr{
+hr {
   margin: 0 0 0 0;
 }
 
-.testimonial{
+.testimonial {
   margin-top: 28px;
   background-color: rgb(240, 240, 240);
   border-radius: 8px;
@@ -205,23 +187,23 @@ blockquote:before {
 blockquote:after {
   font-family: Georgia, serif;
   position: absolute;
-  float:right;
-  font-size:5em;
+  float: right;
+  font-size: 5em;
   line-height: 1;
-  right:0;
-  bottom:-0.5em;
+  right: 0;
+  bottom: -0.5em;
   content: "\201D";
   color: gray;
 }
 blockquote footer {
   padding: 0 2em 0 0;
-  text-align:right;
+  text-align: right;
 }
 blockquote cite:before {
   content: "\2013";
 }
 
-.more-testimonials{
+.more-testimonials {
   font-style: italic;
   color: black;
   font-family: palatino;
@@ -230,31 +212,67 @@ blockquote cite:before {
   text-decoration: none;
 }
 
-.more-testimonials:hover{
+.more-testimonials:hover {
   color: black;
 }
 
-.map-section{
+.map-section {
   text-align: center;
 }
 
-.contact{
+.contact {
   font-size: 18px;
 }
-
 
 @media screen and (max-width: 792px) {
   .located-text {
     width: 80vw;
   }
 
-  .logo-image-2{
+  .logo-image-2 {
     display: none;
   }
 }
 
-@media only screen and (max-width: 825px) {
-  .left-container{
+@media only screen and (min-width: 601px) {
+  .title-container {
+    min-height: 64vh;
+    width: 100%;
+    /* background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("los-angeles.jpg") no-repeat center center fixed; */
+    background: url("Images/los-angeles.jpg") no-repeat top center fixed;
+
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left-container {
     display: none;
+  }
+
+  .navbar-brand{
+    font-size: 18px;
+  }
+
+  .title-container {
+    background: url("Images/los-angeles.jpg");
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position: relative;
+    top: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    overflow: hidden;
+    height: 74vw;
+    width: 100%;
   }
 }
