@@ -236,10 +236,10 @@ blockquote cite:before {
 
 @media only screen and (min-width: 601px) {
   .title-container {
-    min-height: 64vh;
+    min-height: 76vh;
     width: 100%;
     /* background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("los-angeles.jpg") no-repeat center center fixed; */
-    background: url("Images/los-angeles.jpg") no-repeat top center fixed;
+    background: url("Images/griffith-1.jpg") no-repeat top center fixed;
 
     object-fit: cover;
     -webkit-background-size: cover;
@@ -259,7 +259,7 @@ blockquote cite:before {
   }
 
   .title-container {
-    background: url("Images/los-angeles.jpg");
+    background: url("Images/griffith-1.jpg");
     object-fit: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -272,7 +272,7 @@ blockquote cite:before {
     background-size: contain;
     background-position: top;
     overflow: hidden;
-    height: 74vw;
+    height: 65vw;
     width: 100%;
   }
 }
