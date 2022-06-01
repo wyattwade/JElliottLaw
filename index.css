@@ -244,7 +244,7 @@ blockquote cite:before {
 }
 
 .landing-image-wrapper{
-  
+
 }
 
 .landing-profile-image {
@@ -263,7 +263,9 @@ blockquote cite:before {
   max-width: 45%;
 }
 
-
+.contact-me-wrapper{
+  width: 80%;
+}
 
 
 
