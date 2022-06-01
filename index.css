@@ -238,10 +238,14 @@ blockquote cite:before {
   text-align: left;
 }
 
-.landing-image-wrapper{
+
+.landing-image-section{
   max-width: 45%;
 }
 
+.landing-image-wrapper{
+  
+}
 
 .landing-profile-image {
   max-width: 80%;
@@ -249,10 +253,35 @@ blockquote cite:before {
   height: auto;
 }
 
+.landing-about-header{
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
 
 .landing-about{
   max-width: 45%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
 
 @media screen and (max-width: 792px) {
   .located-text {
