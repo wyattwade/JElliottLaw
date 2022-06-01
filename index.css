@@ -61,8 +61,8 @@ body {
 .intro-section,
 .testimonials-section {
   text-align: center;
-  width: 72%;
-  margin-left: 14%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .about-title {
@@ -229,6 +229,29 @@ blockquote cite:before {
   margin-left: 0px;
   border: none;
   margin-top: 10px;
+}
+
+.landing-profile-row {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.landing-image-wrapper{
+  max-width: 45%;
+}
+
+
+.landing-profile-image {
+  max-width: 80%;
+  width: auto;
+  height: auto;
+}
+
+
+.landing-about{
+  max-width: 45%;
 }
 
 @media screen and (max-width: 792px) {
