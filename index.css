@@ -224,6 +224,13 @@ blockquote cite:before {
   font-size: 18px;
 }
 
+.profile-image {
+  width: 280px;
+  margin-left: 0px;
+  border: none;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 792px) {
   .located-text {
     width: 80vw;

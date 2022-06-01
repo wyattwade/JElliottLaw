@@ -16,13 +16,6 @@
   padding-right: 32px;
 }
 
-.profile-image {
-  width: 280px;
-  margin-left: 0px;
-  border: none;
-  margin-top: 10px;
-}
-
 .left-menu {
   margin-top: 25px;
   width: 298px;
@@ -66,14 +59,23 @@
   display: none;
 }
 
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 600px) {
   .main-container {
     width: 85%;
     margin-left: 7%;
   }
-
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
   .profile-image-mobile {
     display: block;
     margin: 0 0 4px 0;
+  }
+
+  .profiles-title{
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
