@@ -4,7 +4,6 @@
 }
 
 body {
-  max-width: 100%;
 }
 
 .navbar {
@@ -54,19 +53,23 @@ body {
   color: rgba(0, 0, 0, 0.75) !important;
 }
 
-.main-quote {
-  font-weight: bold;
+.landing-profile-row-mobile{
+  display: none;
+}
+
+.landing-profile-image-mobile{
+  display: none;
 }
 
 .intro-section,
 .testimonials-section {
   text-align: center;
-  width: 72%;
-  margin-left: 14%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .about-title {
-  font-family: palatino;
+  /* font-family: palatino; */
   margin-top: 8vh;
   font-size: 22px;
 }
@@ -206,7 +209,7 @@ blockquote cite:before {
 .more-testimonials {
   font-style: italic;
   color: black;
-  font-family: palatino;
+  /* font-family: palatino; */
   margin-top: 8vh;
   font-size: 22px;
   text-decoration: none;
@@ -230,6 +233,101 @@ blockquote cite:before {
   border: none;
   margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing-profile-row {
+  margin-top: 50px;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.landing-image-wrapper{
+  /* text-align: center; */
+  flex: 5;
+  margin-left: 6vw;
+}
+
+.landing-about{
+  /* max-width: 45%; */
+  flex: 6;
+}
+
+.landing-image-section{
+  max-width: 60%;
+}
+
+.landing-profile-image {
+  max-width: 60%;
+  width: auto;
+  height: auto;
+}
+
+.main-quote {
+  /* font-size: min(1.2vw, 24px); */
+  font-size: clamp(20px, 1.8vw, 32px);
+  /* font-weight: 600; */
+  margin-top: 20px;
+  text-align: center;
+  padding-right: 6.5vw;
+}
+
+.landing-about-button{
+  font-size: clamp(20px, 1.8vw, 32px);
+  letter-spacing: 2px;
+  margin-top: 32px;
+}
+
+.landing-about-button a{
+  font-style: italic;
+  color: black;
+  margin-top: 8vh;
+  font-size: 22px;
+}
+
+
+
+
+.contact-me-wrapper{
+  width: 80%;
+}
+
+
+
+.expert-relentless{
+  margin-top: 68px;
+}
+
+
+
+.landing-about-button-mobile{
+  display: none;
+}
+
+.footer-link a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* media queries */
 
 @media screen and (max-width: 792px) {
   .located-text {
@@ -256,7 +354,7 @@ blockquote cite:before {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .left-container {
     display: none;
   }
@@ -281,5 +379,31 @@ blockquote cite:before {
     overflow: hidden;
     height: 65vw;
     width: 100%;
+  }
+
+
+  .landing-profile-row{
+    display: none;
+  }
+
+  .landing-profile-image-mobile{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .landing-profile-row-mobile{
+    display: flex;
+  }
+
+  .landing-about-button-mobile{
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 32px;
+  }
+
+  .expert-relentless{
+    margin-top: 0;
   }
 }
