@@ -53,6 +53,14 @@ body {
   color: rgba(0, 0, 0, 0.75) !important;
 }
 
+.landing-profile-row-mobile{
+  display: none;
+}
+
+.landing-profile-image-mobile{
+  display: none;
+}
+
 .intro-section,
 .testimonials-section {
   text-align: center;
@@ -61,7 +69,7 @@ body {
 }
 
 .about-title {
-  font-family: palatino;
+  /* font-family: palatino; */
   margin-top: 8vh;
   font-size: 22px;
 }
@@ -201,7 +209,7 @@ blockquote cite:before {
 .more-testimonials {
   font-style: italic;
   color: black;
-  font-family: palatino;
+  /* font-family: palatino; */
   margin-top: 8vh;
   font-size: 22px;
   text-decoration: none;
@@ -268,19 +276,28 @@ blockquote cite:before {
 }
 
 .main-quote {
-  font-size: min(1.2vw, 24px);
-  font-weight: 600;
+  /* font-size: min(1.2vw, 24px); */
+  font-size: clamp(20px, 1.8vw, 32px);
+  /* font-weight: 600; */
   margin-top: 20px;
-  line-height: 2.5vw;
   text-align: center;
-  padding-right: 6vw;
+  padding-right: 6.5vw;
 }
 
 .landing-about-button{
-  font-size: min(1.8vw, 32px);
+  font-size: clamp(20px, 1.8vw, 32px);
   letter-spacing: 2px;
   margin-top: 32px;
 }
+
+.landing-about-button a{
+  font-style: italic;
+  color: black;
+  margin-top: 8vh;
+  font-size: 22px;
+}
+
+
 
 
 .contact-me-wrapper{
@@ -295,9 +312,14 @@ blockquote cite:before {
 
 
 
+.landing-about-button-mobile{
+  display: none;
+}
 
-
-
+.footer-link a{
+  color: black;
+  text-decoration: none;
+}
 
 
 
@@ -332,7 +354,7 @@ blockquote cite:before {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .left-container {
     display: none;
   }
@@ -357,5 +379,31 @@ blockquote cite:before {
     overflow: hidden;
     height: 65vw;
     width: 100%;
+  }
+
+
+  .landing-profile-row{
+    display: none;
+  }
+
+  .landing-profile-image-mobile{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .landing-profile-row-mobile{
+    display: flex;
+  }
+
+  .landing-about-button-mobile{
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 32px;
+  }
+
+  .expert-relentless{
+    margin-top: 0;
   }
 }
