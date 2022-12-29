@@ -70,7 +70,7 @@
   position: absolute;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .main-container {
     width: 85%;
     margin-left: 7%;
@@ -85,8 +85,19 @@
   }
 
   .profiles-title{
-    
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  .don-image-wrapper{
+    position: relative;
+    height: 415px;
+    width: 280px;
+    right: 0px;
+    margin: auto;
+  }
+
+  .don-profile-image{
+    position: relative;
   }
 }
