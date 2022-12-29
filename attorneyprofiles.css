@@ -59,6 +59,17 @@
   display: none;
 }
 
+.don-image-wrapper{
+  position: relative;
+  height: 0px;
+  width: 0px;
+  right: 332px;
+}
+
+.don-profile-image{
+  position: absolute;
+}
+
 @media only screen and (max-width: 600px) {
   .main-container {
     width: 85%;
