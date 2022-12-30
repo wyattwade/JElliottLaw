@@ -68,7 +68,7 @@
     <div class="main-container">
       <div class="left-container">
         <div>
-          <img src="Images/headshot.png" class="profile-image"></img>
+          <img src="Images/James_Elliott.jpg" class="profile-image"/>
         </div>
         <div class="left-menu">
           <div class="left-menu-title"><br>Practice Areas</div>
@@ -176,7 +176,6 @@
             </a>
           </div>
         </div>
-      </div>
 
       <div class="footer">
         <div class="footer-link">
@@ -207,13 +206,12 @@
 </body>
 <script>
     var form = document.getElementById("my-form");
-    
     async function handleSubmit(event) {
       event.preventDefault();
       var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
-        method: form.method,
+          method: form.method,
         body: data,
         headers: {
             'Accept': 'application/json'
